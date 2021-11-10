@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "f8e847c7-c52e-4160-95b3-0621f5b77b83",
+		"name": "RCS GraphQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query ($username: String!, $password: String!){\n    users(username: $username, password: $password) {\n        id,\n        username,\n        password,\n        firstName,\n        lastName,\n        tasks {\n            id,\n            title,\n            category,\n            important,\n            priority,\n            status,\n            dueOn,\n            createdOn\n            comments {\n                id,\n                user {\n                    id\n                }\n                text,\n                createdOn\n            }\n        }\n    }\n}",
+						"variables": "{\n    \"username\": \"benjamin\",\n    \"password\": \"benjamin\"\n}"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
