@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "dist",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "useUnknownInCatchVariables": false
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

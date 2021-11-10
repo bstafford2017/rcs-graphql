@@ -1,0 +1,22 @@
+{
+  "name": "rcs-graphql",
+  "version": "1.0.0",
+  "description": "GraphQL API for Remote Concurrent Scheduler",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "sls offline --noPrependStageInUrl",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjamin Stafford",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^15.7.2",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "apollo-server-lambda": "^3.5.0",
+    "serverless": "^2.66.0",
+    "serverless-offline": "^8.2.0"
+  }
+}
