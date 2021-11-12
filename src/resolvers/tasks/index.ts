@@ -1,4 +1,4 @@
-import { Task } from '../../types/task'
+import Task from '../../types/task'
 
 export const comments = ({ comments }: Task) => {
   return comments

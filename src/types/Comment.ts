@@ -3,4 +3,5 @@ export default interface Comment {
   user: string
   text: string
   createdOn: number
+  // tags: string[]
 }

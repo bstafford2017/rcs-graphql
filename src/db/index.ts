@@ -1,6 +1,7 @@
+import { PreferenceType } from '../types/PreferenceType'
 import { Priority } from '../types/Priority'
 import { Status } from '../types/Status'
-import { User } from '../types/User'
+import User from '../types/User'
 
 export const db: User[] = [
   {
@@ -41,6 +42,16 @@ export const db: User[] = [
         createdOn: Date.now(),
         dueOn: Date.now()
       }
+    ],
+    preferences: [
+      {
+        type: PreferenceType.EMAIL,
+        value: 'b.stafford2017@gmail.com'
+      },
+      {
+        type: PreferenceType.PHONE_NUMBER,
+        value: '507-283-1928'
+      }
     ]
   },
   {
@@ -68,6 +79,16 @@ export const db: User[] = [
         status: Status.COMPLETE,
         createdOn: Date.now(),
         dueOn: Date.now()
+      }
+    ],
+    preferences: [
+      {
+        type: PreferenceType.EMAIL,
+        value: 'b.stafford2017@gmail.com'
+      },
+      {
+        type: PreferenceType.PHONE_NUMBER,
+        value: '507-283-1928'
       }
     ]
   }

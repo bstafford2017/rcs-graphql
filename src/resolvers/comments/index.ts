@@ -1,7 +1,7 @@
 import { db } from '../../db'
 import Comment from '../../types/Comment'
-import { Task } from '../../types/task'
-import { User } from '../../types/User'
+import Task from '../../types/task'
+import User from '../../types/User'
 
 export const commentCreatedOn = ({ createdOn }: Comment) => {
   return new Date(createdOn).toDateString()

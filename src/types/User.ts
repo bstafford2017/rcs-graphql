@@ -1,10 +1,12 @@
-import { Task } from './task'
+import Preference from './Preference'
+import Task from './task'
 
-export interface User {
+export default interface User {
   id: string
   username: string
   password: string
   firstName: string
   lastName: string
-  tasks: Array<Task>
+  tasks: Task[]
+  preferences: Preference[]
 }

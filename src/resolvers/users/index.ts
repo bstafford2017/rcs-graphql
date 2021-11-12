@@ -1,12 +1,7 @@
-import { Priority } from '../../types/Priority'
-import { Status } from '../../types/Status'
-import { User } from '../../types/User'
+import User from '../../types/User'
 import { db } from '../../db'
 
-export const users = (
-  _: any,
-  { username, password }: { username: string; password: string }
-) => {
+export const users = (_: any, { username, password }: User) => {
   return db.filter((u) => u.username === username && u.password === password)
 }
 
